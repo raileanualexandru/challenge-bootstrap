@@ -9,148 +9,40 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Bootstrap challenge</title>
     <style>
         body {
-            background-color: aqua;
-        }
-        @media screen and (max-width: 768px){
-            #sidebar{display:none;}
+            background-image: url("images/matrix1.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
         }
     </style>
-    <title>Grid away, grid ahoy!</title>
 </head>
 
 <body>
-    <div class="container">
-        <div id="sidebar" class="row">
-            <div class="col-1">
-                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
-                        aria-controls="v-pills-home" aria-selected="true">Home</a>
-                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
-                        aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-                        aria-controls="v-pills-messages" aria-selected="false">Messages</a>
-                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
-                        aria-controls="v-pills-settings" aria-selected="false">Settings</a>
-                </div>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <a class="navbar-brand" href="#">
+                <img src="images/logoB.png" alt="Logo" style="width:80px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active" id="nav">
+                        <a class="nav-link" href="grid.html">Grid away, grid ahoy!</a>
+                    </li>
+                    <li class="nav-item active" id="nav">
+                        <a class="nav-link" href="carousel.html">One more round on the Carousel!</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="row">
-            <div class="card-deck">
-                <div class="col col-md-3">
-                    <div class="card">
-                        <img src="images/1.webp" height="250px" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary"data-toggle="tooltip" data-placement="bottom" title="Extra information">LEARN MORE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-md-3">
-                    <div class="card">
-                        <img src="images/2.webp" height="250px" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary"data-toggle="tooltip" data-placement="bottom" title="Extra information">LEARN MORE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-md-3">
-                    <div class="card">
-                        <img src="images/3.webp" height="250px" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary"data-toggle="tooltip" data-placement="bottom" title="Extra information">LEARN MORE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-md-3">
-                    <div class="card">
-                        <img src="images/4.webp" height="250px" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary"data-toggle="tooltip" data-placement="bottom" title="Extra information">LEARN MORE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br><br>
-        <div class="row">
-            <div class="card-deck">
-                <div class="col col-md-3">
-                    <div class="card">
-                        <img src="images/1.webp" height="250px" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary"data-toggle="tooltip" data-placement="bottom" title="Extra information">LEARN MORE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-md-3">
-                    <div class="card">
-                        <img src="images/2.webp" height="250px" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary"data-toggle="tooltip" data-placement="bottom" title="Extra information">LEARN MORE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-md-3">
-                    <div class="card">
-                        <img src="images/3.webp" height="250px" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary"data-toggle="tooltip" data-placement="bottom" title="Extra information">LEARN MORE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-md-3">
-                    <div class="card">
-                        <img src="images/4.webp" height="250px" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary"data-toggle="tooltip" data-placement="bottom" title="Extra information">LEARN MORE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </nav>
     </div>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
